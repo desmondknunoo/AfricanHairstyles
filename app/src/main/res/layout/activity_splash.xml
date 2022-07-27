@@ -7,89 +7,7 @@
     android:background="#ffffff"
     tools:context=".SplashActivity">
 
-
-   <androidx.cardview.widget.CardView
-       android:id="@+id/goil"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:foreground="?android:attr/selectableItemBackground"
-       android:clickable="true"
-       android:focusable="true"
-       app:cardBackgroundColor="@color/white"
-       app:cardCornerRadius="10dp"
-       app:cardElevation="5dp"
-       app:cardMaxElevation="5dp"
-       app:cardPreventCornerOverlap="true"
-       app:cardUseCompatPadding="true"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent">
-
-
-      <ImageView
-          android:id="@+id/img"
-          android:layout_width="50dp"
-          android:layout_height="50dp"
-          android:layout_gravity="start"
-          android:layout_margin="10dp"
-          android:contentDescription="@string/app_name"
-          android:src="@mipmap/ic_launcher" />
-
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_gravity="end|center_horizontal"
-          android:layout_marginTop="20dp"
-          android:layout_marginBottom="20dp"
-          android:layout_marginEnd="20dp"
-          android:text="Goil"
-          android:textSize="15sp"
-          android:textStyle="bold" />
-
-
-   </androidx.cardview.widget.CardView>
-
-   <androidx.cardview.widget.CardView
-       android:id="@+id/shell"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:clickable="true"
-       android:focusable="true"
-       android:foreground="?android:attr/selectableItemBackground"
-       app:cardBackgroundColor="@color/white"
-       app:cardCornerRadius="10dp"
-       app:cardElevation="5dp"
-       app:cardMaxElevation="5dp"
-       app:cardPreventCornerOverlap="true"
-       app:cardUseCompatPadding="true"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/goil">
-
-      <ImageView
-          android:id="@+id/img2"
-          android:layout_width="50dp"
-          android:layout_height="50dp"
-          android:layout_gravity="start"
-          android:layout_margin="10dp"
-          android:contentDescription="@string/app_name"
-          android:src="@drawable/ic_shell" />
-
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_gravity="end|center_horizontal"
-          android:layout_marginTop="20dp"
-          android:layout_marginEnd="20dp"
-          android:layout_marginBottom="20dp"
-          android:text="Shell"
-          android:textSize="15sp"
-          android:textStyle="bold" />
-
-
-   </androidx.cardview.widget.CardView>
-
-   <!-- <ProgressBar
+   <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
@@ -99,5 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
+        app:layout_constraintTop_toTopOf="parent" />
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,28 +21,15 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        cardButton = findViewById(R.id.shell)
-        cardButton!!.setOnClickListener {
-            val webIntent = Intent(Intent.ACTION_VIEW)
-            //webIntent.data = Uri.parse("https://www.google.com/maps/search/puma+fuel+station+near+me")
-            webIntent.data = Uri.parse("http://maps.apple.com/?q=shell+station+near+me")
-
-            try {
-                startActivity(Intent.createChooser(webIntent, "Complete action using"))
-
-            } catch (ex: android.content.ActivityNotFoundException) {
-                noClientDialog()
-
-            }
-        }
-       /* Handler(Looper.getMainLooper()).postDelayed({
+    
+       Handler(Looper.getMainLooper()).postDelayed({
             // Your Code
             if (!isFinishing) {
 
             val intent = Intent(applicationContext, MainActivity::class.java)
             startActivity(intent)
             finish()}
-        }, 3000)*/
+        }, 3000)
     }
 
     public override fun onDestroy() {

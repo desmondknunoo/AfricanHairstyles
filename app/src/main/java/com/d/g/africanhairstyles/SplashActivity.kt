@@ -32,16 +32,4 @@ class SplashActivity : AppCompatActivity() {
         }, 3000)
     }
 
-    public override fun onDestroy() {
-
-        super.onDestroy()
-    }
-    private fun noClientDialog(){
-        val dialog = MaterialDialog.Builder(this).title("No client available")
-            .positiveText("OK")
-            .onPositive { dialog, _ -> dialog.dismiss() }.build()
-
-        dialog.show()
-    }
-
 }

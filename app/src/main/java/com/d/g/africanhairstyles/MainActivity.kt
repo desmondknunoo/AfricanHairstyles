@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity() {
             shareActionProvider = MenuItemCompat.getActionProvider(menuItem) as? ShareActionProvider
         }
 
-
         return true
     }*/
 /*
